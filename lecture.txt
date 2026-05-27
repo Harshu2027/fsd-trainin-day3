@@ -42,4 +42,4 @@ Backgrounds:
 CSS colors 3 primary specification types:
 constant, rgb method and hexadecimal type. (rgba, hsl etc.,)
 
-background-color, -image, 
+background-color, -image, -origin, -position, -position-x, -position-y, -repeat, -size.
