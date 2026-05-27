@@ -1,0 +1,45 @@
+Introduction to CSS
+
+Why is it named as Cascading? => itt refers to how the browser decides to provide the style to an element if there are many style sheets for that particular element.
+Types of css: Inline, Internal and External.
+Selectors: element selector, id selector, universal selector(discedent), class selector, attribute selector, pseudo-class selector, pseudo-element selector, grouping selector.
+---
+
+CSS Combinators: define the relationship between 2 or more selectors.
+1. Descedent combinator(space) => At any level, the style will be apllicable. ex: div p{  font-color: blue}  like <div> <h1> <p> </h1> <p> <p> </div> : All p will be colored here, at any level.
+2. Child combinator (>) => Selects that are direct children only.
+3. Adjacent sibling combinator(+) => Only one adjacent sibling, the first one. 
+4. General sibling combinator(~) => All siblings will be applied here.
+----
+
+Pseudo-classes: useed to define a special state of an element.
+->based on states such as hover, focus or position.
+synatx: selector:pseudo-class{
+                 property:value;
+                }
+types:
+1. :hover: applies when the user moves mouse over the element.
+    * nav a:hover{
+            color:yellow; 
+    }
+2. :active: applies when the element is being clicked.
+3. :focus: Applies when input is selected(clicked/typed). {can also valid or invalids of some input when taken}
+4. :visited: Styles the visited links.
+5. :first-child: selects the first child element.
+6. :nth-child(): selcts based on the position.
+7. :last-child: selects the last child element.
+----
+
+Importing CSS into HTML:
+1. Inline CSS: inside the HTML element, only applicable for that single element.
+2. Internal CSS: Enclosed inside the head tag in HTML doc, applied for the elements for that only single web page.
+3. External CSS: styles are written in an external document with .css extension and can be linked into multiple HTML pages using <link rel=stylesheet" href=style.css">
+---
+
+CSS Properties:
+Backgrounds:
+
+CSS colors 3 primary specification types:
+constant, rgb method and hexadecimal type. (rgba, hsl etc.,)
+
+background-color, -image, 
